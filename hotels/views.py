@@ -1,10 +1,10 @@
 from datetime import datetime
 
-from rest_framework.generics import ListAPIView, RetrieveAPIView, DestroyAPIView, RetrieveUpdateAPIView
+from rest_framework.generics import ListAPIView, RetrieveAPIView, DestroyAPIView, CreateAPIView,RetrieveUpdateAPIView
 from rest_framework.filters import SearchFilter
 from rest_framework.permissions import IsAuthenticated
 
-from .models import Booking
+from .models import Booking,Hotel
 from .permissions import IsBookedByUser, IsNotInPast
 from .serializers import HotelsListSerializer, HotelDetailsSerializer, BookHotelSerializer, BookingDetailsSerializer, UserSerializer, UserCreateSerializer
 
